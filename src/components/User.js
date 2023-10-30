@@ -1,11 +1,14 @@
 
-const User = ({simpsons}) => {
-    const{name,characteristic, image } = simpsons;
+const User = ({characters}) => {
+    const{id,name,status,species,gender,image} = characters;
 
     return (
         <div>
+            <div>id: {id}</div>
            <div>name: {name}</div>
-           <div>characteristic: {characteristic}</div>
+           <div>status: {status}</div>
+           <div>species: {species}</div>
+           <div>gender: {gender}</div>
            <img src={image} alt={image}/>
         </div>
     );
